@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyser</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Data Analyser</h1>
+        </header>
+        <section class="data-visualization">
+            <h2>Visualize Data</h2>
+            <!-- Basic plots and charts to visualize the data -->
+            <button>Upload Data</button>
+            <div class="chart">
+                <!-- Example chart placeholder -->
+                <canvas id="dataChart"></canvas>
+            </div>
+        </section>
+        <section class="data-analysis-tools">
+            <h2>Analysis Tools</h2>
+            <!-- Tools for various data analyses -->
+            <button>Run Analysis</button>
+        </section>
+    </div>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Example script for rendering a chart using Chart.js
+        var ctx = document.getElementById('dataChart').getContext('2d');
+        var dataChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Dataset 1',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

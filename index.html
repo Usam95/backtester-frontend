@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtesting Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i></a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i></a></li>
+                <li><a href="data-analyser.html"><i class="fas fa-chart-bar"></i></a></li>
+                <li><a href="#data-engineer"><i class="fas fa-server"></i></a></li>
+                <li><a href="#ml-trainer"><i class="fas fa-brain"></i></a></li>
+                <li><a href="backtester.html"><i class="fas fa-robot"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header class="main-header">
+            <h1>Welcome to Backtesting for Algorithmic Trading</h1>
+            <p>Generate comprehensive reports, evaluate performance metrics, and fine-tune your trading strategies effectively.</p>
+        </header>
+        <div class="app-suite">
+            <div class="app-card" id="data-analyser"><i class="fas fa-chart-bar"></i> Data Analyser</div>
+            <div class="app-card" id="data-engineer"><i class="fas fa-server"></i> Data Engineer</div>
+            <div class="app-card" id="ml-trainer"><i class="fas fa-brain"></i> ML Trainer</div>
+            <div class="app-card" id="backtester"><i class="fas fa-robot"></i> Backtester</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Algorithmic Trading Backtester. All rights reserved.</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
